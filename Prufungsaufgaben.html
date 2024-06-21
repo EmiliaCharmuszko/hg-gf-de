@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Prüfungsaufgaben</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Prüfungsaufgaben</h1>
+        <div class="pustota"></div>
+        <nav>
+            <a href="index.html">Home</a>
+			<a href="Links.html">Wichtige Links</a>
+			<a href="Arbeitsplan.html">Arbeitspläne</a>
+			<a href="Prufungsaufgaben.html">Prüfungsaufgaben</a>
+        </nav>
+    </header>
+    <main>
+        
+     
+        <article class="post" id="Zeichenketten">
+            <h1>Operationen für Zeichenketten</h1>
+			<p>Für die Arbeit mit Zeichenketten im Rahmen von zentralen Prüfungsaufgaben wird der Umfang der zu verwendenden Operationen auf die folgenden eingeschränkt: </p>
+			<ul>
+				<li>Bestimmen der Länge einer Zeichenkette</li>
+				<li>Auslesen eines Zeichens an einer bestimmten Position </li>
+				<li>Ersetzen eines Zeichens an einer bestimmten Position </li>
+				<li>Verbinden von zwei Zeichenketten zu einer</li>
+				<li>Prüfen des Inhalts von zwei Zeichenketten auf Gleichheit </li>
+				<li>Lexikographisches Vergleichen von zwei Zeichenketten </li>
+			</ul>
+			<p>Die Prüflinge müssen den Umgang mit den in der Auflistung genannten Operationen in der im Unterricht verwendeten Programmiersprache beherrschen. Die Verwendung weiterer Zeichenkettenoperationen ist nicht zulässig. </p>
+
+        </article>
+
+        <article class="post">
+            <h1>Operationen für dynamische Reihungen, Stapel, Schlangen und Binärbäume </h1>
+            <p>Im Rahmen von zentralen Prüfungsaufgaben werden für die aufgeführten Klassen die folgenden Operationen verwendet. Die Klassen verwenden Inhaltstypen (bzw. Inhaltsklassen), die jeweils der aktuellen Aufgabenstellung angepasst werden. Mögliche Laufzeitfehler bei der Anwendung der Operationen, z. B. Entnehmen bei einem leeren Stapel oder Zugriff auf eine nicht existierende Position einer dynamischen Reihung, müssen bei der Verwendung durch entsprechende Abfragen explizit ausgeschlossen werden. </p>
+            
+            <h3>Dynamische Reihung:</h3>
+			<p>Die Nummerierung der Elemente der dynamischen Reihung beginnt mit dem Index 1.</p>
+			<h5>DynArray()</h5>
+			<p>Eine leere dynamische Reihung wird angelegt</p>
+			<h5>isEmpty(): Wahrheitswert</h5>
+			<p>Wenn die dynamische Reihung kein Element enthält, wird der Wert wahr zurückgegeben, sonst der Wertfalsch.</p>
+			<h5>getItem(index: Ganzzahl): Inhaltstyp </h5>
+			<p>Der Inhalt des Elements an der Position index wird zurückgegeben. </p>
+			<h5>append(inhalt: Inhaltstyp) </h5>
+			<p>Ein neues Element mit dem übergebenen Inhalt wird am Ende der dynamischen Reihung angefügt </p>
+			<h5>insertAt(index: Ganzzahl, inhalt: Inhaltstyp)</h5>
+			<p>Ein neues Element mit dem übergebenen Inhalt wird an der Position index in die dynamische Reihung eingefügt. Das Element, das sich vorher an dieser Position befunden hat, und alle nachfolgenden werden nach hinten verschoben. Entspricht der Wert von index der Länge der dynamischen Reihung + 1, so wird ein neues Element am Ende der dynamischen Reihung angefügt. </p>
+			<h5>setItem(index: Ganzzahl, inhalt: Inhaltstyp) </h5>
+			<p>Der Inhalt des Elementes an der Position index wird durch den übergebenen Inhalt ersetzt. </p>
+			<h5>delete(index: Ganzzahl)  </h5>
+			<p>Das Element an der Position index wird entfernt. Alle folgenden Elemente werden um eine Position nach vorne geschoben.  </p>
+			<h5>getLength(): Ganzzahl</h5>
+			<p>Die Anzahl der Elemente der dynamischen Reihung wird zurückgegeben. </p>
+			
+            <h3>Stapel:</h3>
+			<h5>Stack()</h5>
+			<p>Ein leerer Stapel wird angelegt.</p>
+			<h5>isEmpty(): Wahrheitswert</h5>
+			<p>Wenn der Stapel kein Element enthält, wird der Wert wahr zurückgegeben, sonst der Wert falsch.</p>
+			<h5>top(): Inhaltstyp</h5>
+			<p>Der Inhalt des obersten Elements des Stapels wird zurückgegeben, das Element aber nicht entfernt.</p>
+			<h5>push(inhalt: Inhaltstyp)</h5>
+			<p>Ein neues Element mit dem übergebenen Inhalt wird auf den Stapel gelegt. </p>
+			<h5>pop(): Inhaltstyp</h5>
+			<p>Der Inhalt des obersten Elements wird zurückgegeben und das Element wird aus dem Stapel entfernt.</p>
+			
+            <h3>Schlange:</h3>
+			<h5>Queue()</h5>
+			<p>Eine leere Schlange wird angelegt.</p>
+			<h5>isEmpty(): Wahrheitswert</h5>
+			<p>Wenn die Schlange kein Element enthält, wird der Wert wahr zurückgegeben, sonst der Wert falsch.</p>
+			<h5>head(): Inhaltstyp</h5>
+			<p>Der Inhalt des ersten Elements der Schlange wird zurückgegeben, das Element aber nicht entfernt. </p>
+			<h5>enqueue(inhalt: Inhaltstyp)</h5>
+			<p>Ein neues Element mit dem angegebenen Inhalt wird am Ende an die Schlange angehängt.</p>
+			<h5>dequeue(): Inhaltstyp</h5>
+			<p>Der Inhalt des ersten Elements wird zurückgegeben und das Element wird aus der Schlange entfernt.</p>
+			
+			
+            <h3>Binärbaum:</h3>
+			<h5>BinTree()</h5>
+			<p>Ein Baum wird erzeugt. Der Baum besitzt keine Teilbäume. Die Wurzel besitzt keinen Inhaltswert.</p>
+			<h5>BinTree(inhalt: Inhaltstyp)</h5>
+			<p>Ein Baum wird erzeugt. Der Baum besitzt keine Teilbäume. Die Wurzel erhält den übergebenen Inhalt als Wert. </p>
+			<h5>hasItem(): Wahrheitswert</h5>
+			<p>Wenn die Wurzel des Baums einen Inhaltswert besitzt, wird der Wert wahr zurückgegeben, sonst der Wert falsch. </p>
+			<h5>getItem(): Inhaltstyp</h5>
+			<p>Die Operation gibt den Inhaltswert der Wurzel des Baumes zurück. </p>
+			<h5>setItem(inhalt: Inhaltstyp) </h5>
+			<p>Die Wurzel des Baums erhält den übergebenen Inhalt als Wert. </p>
+			<h5>deleteItem()</h5>
+			<p>Die Operation löscht den Inhaltswert der Wurzel des Baums. </p>
+			<h5>isLeaf(): Wahrheitswert</h5>
+			<p>Wenn der Baum keine Teilbäume besitzt, die Wurzel des Baums also ein Blatt ist, wird der Wert wahr zurückgegeben, sonst der Wert falsch.</p>
+			<h5>hasLeft(): Wahrheitswert</h5>
+			<p>Wenn der Baum einen linken Teilbaum besitzt, wird der Wert wahr zurückgegeben, sonst der Wert falsch.</p>
+			<h5>getLeft(): Binärbaum</h5>
+			<p>Die Operation gibt den linken Teilbaum zurück</p>
+			<h5>setLeft(b: Binärbaum)</h5>
+			<p>Der übergebene Baum wird als linker Teilbaum gesetzt.</p>
+			<h5>deleteLeft() </h5>
+			<p>Die Operation löscht den linken Teilbaum. </p>
+			<h5>hasRight(): Wahrheitswert</h5>
+			<p>Wenn der Baum einen rechten Teilbaum besitzt, wird der Wert wahr zurückgegeben, sonst der Wert falsch.</p>
+			<h5>getRight(): Binärbaum</h5>
+			<p>Die Operation gibt den rechten Teilbaum zurück. </p>
+			<h5>setRight(b: Binärbaum)</h5>
+			<p>Der übergebene Baum wird als rechter Teilbaum gesetzt. </p>
+			<h5>deleteRight()</h5>
+			<p>Die Operation löscht den rechten Teilbaum.</p>
+            
+        </article>
+
+		<article class="post">
+            <h1>Datenbankabfragen </h1>
+			<p>Im Rahmen von zentralen Prüfungsaufgaben wird in den Aufgabenstellungen und in den erwarteten Lösungen die Abfragesprache SQL mit der folgenden Syntax unter Berücksichtigung der angegebenen Operatoren und Gruppenfunktionen verwendet. Verschachtelte SQL-Anweisungen werden im Rahmen der zentralen Prüfungsaufgaben nicht thematisiert. </p>
+			
+			<h3>SELECT-Anweisung:</h3>
+			<ul>
+				<li>SELECT [DISTINCT | ALL] <* | spaltenliste></li>
+				<li>FROM < tabellenliste ></li>
+				<li>[WHERE < suchbedingung >]</li>
+				<li>[GROUP BY < spaltenliste >]</li>
+				<li>[HAVING < bedingungsliste >]</li>
+				<li>[ORDER BY < spalte1 > [ASC | DESC] [, < spalte2 > [ASC | DESC] [...] ] ]</li>
+				<li>[LIMIT < wert >] </li>
+			</ul>
+            <h3>Operatoren:</h3>
+			<ul>
+				<li>+, -, *, /</li>
+				<li>=, != (ungleich), >, <, >=, <=</li>
+				<li>AND, OR, NOT</li>
+                <li>LIKE (mit den Platzhaltern _ und %) , BETWEEN, IN, IS NULL</li>
+			
+            <h3>Arithmetische Gruppenfunktionen:</h3>
+            <ul>
+                <li>AVG( ), COUNT( ), MAX( ), MIN( ), SUM( )</li>  
+            </ul>  
+        </article>
+
+		<article class="post" >
+            <h1>Standardisierte Darstellung von Operationen und Algorithmen</h1>
+			<ul>
+                <li>Operationen werden in den Aufgabenstellungen vergleichbar zur Darstellung in den Klassendiagrammen wie folgt notiert, um die Bezeichnung, die Übergabeparameter und den Rückgabewert zu kennzeichnen: </li>
+                <h5>Bezeichnung(Parameterbezeichnung: Parametertyp, ...): Rückgabetyp </h5>
+                <p>Beispiel:</p> <h5>istGerade(x: Ganzzahl): Wahrheitswert </h5>
+                <li>Zur Darstellung von Algorithmen werden in den zentralen Prüfungsaufgaben Struktogramme (NassiShneiderman-Diagramme) verwendet, wie im folgenden Beispiel exemplarisch dargestellt: </li>
+            </ul>
+            <div class="zdj">
+                <img src="img/Zeichenkette.JPG">
+            </div>
+        </article>
+
+        <article class="post">
+            <h1>Klassendiagramme</h1>
+            <p>Klassendiagramme werden in den zentralen Prüfungsaufgaben wie im folgenden Beispiel exemplarisch notiert. Im Sinne einer übersichtlicheren Darstellung können vereinfacht nur die für die konkrete Aufgabenstellung wichtigen Attribute und Operationen angegeben werden, wie im Beispiel in der Klasse Lehrer dokumentiert. Nicht aufgeführte Attribute bzw. Operationen werden durch eine PünktchenSchreibweise verdeutlicht. Konstruktor-Operationen werden durch ein vorangestelltes c notiert. Assoziationen zwischen Klassen werden stets unspezifiziert durch einfache Verbindungslinien angegeben. </p>
+            <div class="zdj">
+                <img src="img/Klassendiagramme.JPG">
+            </div>
+        </article>
+
+		<article class="post" id="Zeichenketten">
+            <h1>Notation von endlichen Automaten, von Mealy-Automaten und von Kellerautomaten </h1>
+            <h2>Endlicher Automat:</h2>
+            <p>Ein endlicher Automat wird durch die Angabe eines Eingabealphabets Σ in Mengenschreibweise und durch einen Übergangsgraphen dargestellt. Die zusätzliche Angabe der Zustandsmenge, der Menge der akzeptierenden Zustände, des Startzustandes und der Übergangsfunktion ist nicht notwendig, wenn die entsprechenden Informationen dem Übergangsgraphen entnommen werden können. Die grafische Darstellung entspricht dem nebenstehenden Beispiel. Akzeptierende Zustände werden mit einem doppelten Rand markiert. Auf die Darstellung eines Fehlerzustandes im Übergangsgraphen kann verzichtet werden, wenn in einem erläuternden Text auf die fehlenden Übergänge und die Existenz eines Fehlerzustandes hingewiesen wird. </p>
+			
+            <div class="zdj">
+                <img src="img/Automat.JPG" alt="Endlicher Automat">
+            </div>
+
+            <h2>Mealy-Automaten:</h2>
+            <p>Die obigen Vorgaben gelten analog für MealyAutomaten, allerdings haben sie keine akzeptierenden Zustände. Die Übergänge eines Mealy-Automaten werden wie nebenstehend dargestellt. Am Zustandsübergang erfolgt die Schreibweise in der Reihenfolge Eingabezeichen / Ausgabezeichen. Zur Vereinfachung sind an den Zustandsübergängen statt eines einzelnen Ausgabezeichens auch Wörter über dem Ausgabealphabet erlaubt. Es sind auch Übergänge möglich, bei denen keine Ausgabe erfolgt. Eine leere Ausgabe wird mit dem Zeichen ε gekennzeichnet </p>
+        
+            <div class="zdj">
+                <img src="img/MealyAutomaten.JPG" alt="Mealy-Automaten">
+            </div>
+
+            <h2>Kellerautomaten:</h2>
+            <p>Bei deterministischen Kellerautomaten wird am Zustandsübergang in Klammern zuerst das oberste Zeichen des Kellerspeichers gefolgt vom aktuellen Eingabezeichen notiert. Das vom Speicher gelesene Zeichen wird dabei aus dem Keller entfernt. Hinter dem Doppelpunkt wird notiert, welches Zeichen wieder im Kellerspeicher abgelegt wird. Dabei ist auch das Speichern mehrerer Zeichen möglich. Das am weitesten rechts notierte Zeichen wird dann zuerst auf den Keller gelegt. </p>
+            <p>Der Kellerspeicher besitzt das Vorbelegungszeichen #. Es sind ε-Übergänge möglich. Wenn ein εÜbergang von einem Zustand ausgeht, so darf von diesem kein weiterer Übergang mit demselben obersten Kellersymbol ausgehen. </p>
+            <p>Eine Eingabe wird genau dann akzeptiert, wenn sich der Automat nach vollständiger Verarbeitung der Eingabe in einem Endzustand befindet. </p>
+            <p>Auf die Darstellung eines Fehlerzustandes im Übergangsgraphen kann analog zum DEA verzichtet werden. </p>
+
+            <div class="zdj">
+                <img src="img/Kellerautomaten.JPG" alt="Kellerautomaten">
+            </div>
+        </article>
+
+		<article class="post" id="Zeichenketten">
+            <h1>ER-Diagramme / Kurzschreibweise von Tabellen </h1>
+			<p>Im folgenden Beispiel sind die Komponenten eines ER-Diagramms dargestellt, wie sie in den zentralen Prüfungsaufgaben verwendet werden. Attribute können sowohl Entitätstypen als auch Beziehungstypen zugeordnet werden. Auch rekursive Beziehungen sind möglich. Die Darstellung der Kardinalitäten an den Kanten und die Kennzeichnung von Schlüsselattributen der Entitätstypen sind im Normalfall obligatorisch. </p>
+            <div class="zdj2">
+                <img src="img/ER-Diagramme.JPG" alt="ER-Diagramme">
+            </div>
+            <p>Für Tabellen in Kurzschreibweise werden Primärschlüssel durch Unterstreichen und Fremdschlüssel durch Voranstellen eines Pfeils gekennzeichnet. </p>
+            <h4>Beispiel: </h4>
+            <h5>Schueler (Vorname, Name, Geburtsdatum, Wohnort, ↑Klassenbezeichnung) </h5>
+            <h5>Klasse (Bezeichnung, Klassenraum) </h5>
+        </article>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(./img/HG1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif; 
+}
+
+
+
+.links-page a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.links-page a:active {
+    background-color: #555; 
+}
+
+
+.links-page a:hover {
+    color: #95c2dd; 
+    text-decoration: underline;
+}
+
+
+
+
+header {
+    background-color: #274C77;
+    padding: 10px 5%;
+    text-align: center;
+}
+
+header h1 {
+    color: #E7ECEF;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #E7ECEF;
+    margin: 0 10px;
+}
+
+
+nav a {
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+nav a:hover {
+    color: #95c2dd; 
+}
+
+
+
+.banner {
+    padding: 10% 5%;
+    color: #0B1426;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.post {
+    padding: 30px 5%;
+    text-align: left; 
+    background-color: #356B8C;
+    color: #000; 
+    border-radius: 10px;
+    margin: 20px auto; 
+    max-width: 1000px;
+}
+
+.post h1 {
+    color: #E7ECEF;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.post h2 {
+    color: #E7ECEF;
+    margin-bottom: 20px;
+}
+
+.post h3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.post h4 {
+    color: #DFEBF2;
+    margin-bottom: 20px;
+}
+
+.post h5 {
+    color: #0B1426;
+    margin-bottom: 5px;
+}
+
+.post p {
+    color: #E7ECEF;
+    margin-bottom: 15px;
+}
+
+.post ul {
+    color: #E7ECEF;
+    margin-bottom: 15px;
+	
+}
+
+.post li {
+    color: #DEE9F3;
+    margin-bottom: 5px;
+}
+
+
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.img-container img:hover {
+    transform: scale(1.05);
+}
+
+
+
+.poster {
+    padding: 30px 5%;
+    text-align: left; 
+    background-color: #356B8C;
+    color: #000; 
+    border-radius: 10px;
+    margin: 20px auto; 
+    max-width: 1000px;
+}
+.poster ul{
+	color: #E7ECEF;
+	font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.poster li {
+    color: #DEE9F3;
+	font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.poster h1 {
+    color: #E7ECEF;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+.photos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+.photo:hover .photo-overlay {
+    opacity: 1;
+}
+
+.photo-overlay h3{
+    margin: 0;
+    font-size: 1.5em;
+    color: #E7ECEF;
+}
+
+.photo-overlay h4{
+    margin: 0;
+    font-size: 1.5em;
+    color: #E7ECEF;
+}
+
+.zdj {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.zdj img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+}
+
+.zdj img:hover {
+    transform: scale(1.5); 
+}
+
+
+
+.zdj2 {
+    text-align: center; 
+    margin-top: 30px; 
+    margin-bottom: 30px;
+}
+
+.zdj2 img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+}
+
+.zdj2 img:hover {
+    transform: scale(1.1); 
+}
+
+
+
+footer {
+    background-color: #274C77;
+    padding: 10px 0;
+    text-align: center;
+    color: #E7ECEF; 
+}
+
+.linki{
+    color: #E7ECEF;
+}
+
+
